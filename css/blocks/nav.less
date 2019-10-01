@@ -1,0 +1,23 @@
+// main: ../style.less
+
+.nav {
+    display: flex;
+    height: 100%;
+}
+
+.nav__link {
+    padding: 10px 33px;
+    font-size: 0.93rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: @black;
+    font-weight: bold;
+
+    border: 1px solid transparent;
+    border-radius: 20px;
+
+    &:hover,
+    &.active {
+        border-color: @black;
+    }
+}
