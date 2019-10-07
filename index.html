@@ -99,7 +99,7 @@
                 </div>
 
                 <div class="portfolio__col" data-cat="website">
-                        <div class="work" data-modal="#modal_project_1">
+                        <div class="work" data-modal="#modal_project_2">
                             <img class="work__image" src="https://placehold.it/370x300" alt="Image with work">
                             <div class="work__content">
                                 <div class="work__cat">CATEGORY: website</div>
@@ -190,7 +190,7 @@
                     </div>
 
                     <div class="portfolio__col" data-cat="website">
-                        <div class="work" data-modal="#modal_project_1">
+                        <div class="work" data-modal="#modal_project_1" >
                             <img class="work__image" src="https://placehold.it/370x300" alt="Image with work">
                             <div class="work__content">
                                 <div class="work__cat">CATEGORY: website</div>
@@ -400,7 +400,14 @@
 
             <div class="modal-work">
                 <div class="modal-work__preview">
-                    <img src="https://placehold.it/790x780" class="modal-work__photo" alt="">
+                    <div data-slider="slick">
+                        <div>
+                            <img src="https://placehold.it/790x780" class="modal-work__photo" alt="">
+                        </div>
+                        <div>
+                            <img src="https://placehold.it/790x780/333" class="modal-work__photo" alt="">
+                        </div>
+                    </div>
                 </div>
                 <div class="model-work__content">
 
@@ -429,11 +436,11 @@
                     </div>
 
                     <div class="modal-work__footer">
-                        <button type="button" class="modal-work__btn modal__work--prev">
+                        <button type="button" class="modal-work__btn slickPrev">
                             <i class="fas fa-chevron-left"></i>
                             Previous
                         </button>
-                        <button type="button" class="modal-work__btn modal__work--next">
+                        <button type="button" class="modal-work__btn slickNext">
                             Next
                             <i class="fas fa-chevron-right"></i>
                         </button>
@@ -445,6 +452,67 @@
         </div>
     </div>
 
+
+    <div class="modal" id="modal_project_2">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/close.svg" alt="Close">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img src="https://placehold.it/790x780" class="modal-work__photo" alt="">
+                        </div>
+                        <div>
+                            <img src="https://placehold.it/790x780/333" class="modal-work__photo" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="model-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Project title 2</h3>
+                        <div class="modal-work__info">
+                            category <span>|</span> 2018
+                        </div>
+                    </div>
+
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">Creative Agency</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque 
+                            eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. 
+                            Sed iaculis eros sem, elementum consequat est consequat eu. 
+                            Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. 
+                            Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. 
+                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
+                            Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet 
+                            aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. 
+                            Duis in nulla egestas, dignissim elit at, imperdiet eros.</p>
+                    </div>
+
+                    <div class="modal-work__footer">
+                        <button type="button" class="modal-work__btn slickPrev">
+                            <i class="fas fa-chevron-left"></i>
+                            Previous
+                        </button>
+                        <button type="button" class="modal-work__btn slickNext">
+                            Next
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
 
     <div class="modal" id="modal__resume">
         <div class="modal__dialog">
@@ -666,6 +734,7 @@
         
     <!-- JS -->
 
+    <script src="js/slick.min.js"></script>
     <script src="js/app.js"></script>
 
 </body>
