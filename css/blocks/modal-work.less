@@ -2,6 +2,7 @@
 
 .modal-work {
     display: flex;
+
 }
 
 .modal-work__preview {
@@ -17,12 +18,21 @@
     z-index: 1;
 
     transform: translate3d(-50%, -50%, 0);
+
 }
 
 .model-work__content {
     width: 35%;
     padding: 3.4rem 6.6rem 1rem 1.73rem;
     position: relative;
+
+    @media @tablet {
+        font-size: 45%;
+    }
+
+    @media @mobile {
+        font-size: 50%;
+    }
 }
 
 .modal-work__header {
@@ -34,6 +44,10 @@
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 0.2rem;
+
+    @media @mobile {
+        font-size: 24px;
+    }
 }
 
 .modal-work__info {

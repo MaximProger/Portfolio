@@ -57,6 +57,7 @@
 
 .modal__content {
     padding: 5rem 1rem;
+
 }
 
 .modal__title {
@@ -64,10 +65,18 @@
     font-size: 3rem;
     text-transform: uppercase;
     font-weight: bold;
+
+    @media @mobile {
+        font-size: 2rem;
+    }
 }
 
 .modal__subtitle {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 400;
+
+    @media @mobile {
+        font-size: 12px;
+    }
 }
