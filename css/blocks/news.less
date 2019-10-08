@@ -3,6 +3,11 @@
 .news {
     margin-top: 15rem;
     margin-bottom: 8rem;
+
+    @media @tablet {
+        margin-top: 12rem;
+        margin-bottom: 5rem;
+    }
 }
 
 .news__header {
@@ -15,6 +20,10 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: 45px;
+
+    @media @mobile {
+        font-size: 36px;
+    }
 }
 
 .news__text {
